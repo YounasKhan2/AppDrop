@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
       </ul>
       <h2 className="text-xl font-semibold mb-2">More Information</h2>
       <p className="mb-4">Google&apos;s Advertising Principles are outlined here: <a href="https://www.google.com/policies/technologies/ads/" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">https://www.google.com/policies/technologies/ads/</a></p>
-      <p>For questions, contact us at <a href="mailto:contact@yourdomain.com" className="text-blue-600 underline">contact@yourdomain.com</a>.</p>
+      <p>For questions, contact us at <a href="mailto:younaskk120@gmail.com" className="text-blue-600 underline">younaskk120@gmail.com</a>.</p>
     </Layout>
   );
 }

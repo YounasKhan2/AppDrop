@@ -67,7 +67,7 @@ export default function About() {
       <p className="mb-4">We are a team of Android enthusiasts dedicated to sharing safe and free APKs for testing and educational purposes. Our mission is to help users discover and enjoy Android apps securely.</p>
       <h2 className="text-xl font-semibold mb-2 mt-8">Contact Us</h2>
       <p className="mb-2">For inquiries, DMCA requests, or support, contact us at:</p>
-      <p className="mb-4">Email: <a href="mailto:contact@yourdomain.com" className="text-blue-600 underline">contact@yourdomain.com</a></p>
+      <p className="mb-4">Email: <a href="mailto:younaskk120@gmail.com" className="text-blue-600 underline">younaskk120@gmail.com</a></p>
       <form onSubmit={handleSubmit} className="max-w-md bg-gray-50 dark:bg-[#232323] rounded p-4 flex flex-col gap-3 border border-gray-200 mt-4">
         <label className="font-medium">Your Name
           <input name="from_name" type="text" className="w-full mt-1 px-3 py-2 border rounded" placeholder="Name" value={formData.from_name} onChange={handleChange} required />
