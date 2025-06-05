@@ -15,6 +15,8 @@ export default function Layout({ title, children }) {
           <Link href="/privacy-policy" className="hover:text-blue-600 transition">Privacy</Link>
           <Link href="/disclaimer" className="hover:text-blue-600 transition">Disclaimer</Link>
           <Link href="/terms" className="hover:text-blue-600 transition">Terms</Link>
+          <Link href="/blog" className="hover:text-blue-600 transition">Blog</Link>
+          <Link href="/categories" className="hover:text-blue-600 transition">Categories</Link>
         </nav>
       </header>
       {/* AdSense placeholder (top) */}
