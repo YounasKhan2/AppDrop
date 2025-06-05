@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
         <li>We comply with GDPR and CCPA. Contact us to request data removal or access.</li>
       </ul>
       <h2 className="text-xl font-semibold mb-2">More Information</h2>
-      <p className="mb-4">Google's Advertising Principles are outlined here: <a href="https://www.google.com/policies/technologies/ads/" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">https://www.google.com/policies/technologies/ads/</a></p>
+      <p className="mb-4">Google&apos;s Advertising Principles are outlined here: <a href="https://www.google.com/policies/technologies/ads/" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">https://www.google.com/policies/technologies/ads/</a></p>
       <p className="mb-4">If you have any questions about this Privacy Policy, please contact us at <span className="break-all">younaskk120@gmail.com</span>. We&apos;re committed to protecting your privacy and ensuring a safe experience on APKDrop.</p>
       <p className="mb-4">We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us and we&apos;ll promptly remove it.</p>
     </Layout>
