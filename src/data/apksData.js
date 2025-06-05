@@ -112,7 +112,50 @@ The app was created to bring the cinema to your pocket, with a focus on fast str
     "v1.0.0 - Initial release with movie streaming, recommendations, and watchlist features."
   ],
   apkFile: null // Download not enabled yet
-}
+},
+  {
+    slug: "app4",
+    name: "NewsApp",
+    description: `NewsApp is a modern and intuitive news aggregator that brings you the latest headlines, trending stories, and in-depth articles from around the world. Stay informed with real-time updates, personalized categories, and a beautiful reading experience. NewsApp is designed for users who want to keep up with current events, technology, sports, entertainment, and more—all in one place.\n\nThe app was created to make news discovery effortless and enjoyable, with a focus on speed, readability, and customization. No subscription required to browse and read top stories!`,
+    features: [
+      {
+        title: "Personalized Categories",
+        explanation: "Choose your favorite topics and get news tailored to your interests."
+      },
+      {
+        title: "Real-Time Updates",
+        explanation: "Stay up-to-date with breaking news and live coverage."
+      },
+      {
+        title: "Bookmark Articles",
+        explanation: "Save articles to read later or revisit your favorite stories."
+      },
+      {
+        title: "User Profiles",
+        explanation: "Customize your profile and manage your reading preferences."
+      },
+      {
+        title: "Dark Mode",
+        explanation: "Switch between light and dark themes for comfortable reading."
+      }
+    ],
+    screenshots: [
+      { src: "/apks/app4/login.jpg", caption: "Login to access NewsApp." },
+      { src: "/apks/app4/signup.jpg", caption: "Sign up and personalize your news feed." },
+      { src: "/apks/app4/homepage.jpg", caption: "Browse top headlines and trending stories." },
+      { src: "/apks/app4/categories.jpg", caption: "Explore news by categories." },
+      { src: "/apks/app4/detail page.jpg", caption: "Read full articles with a clean layout." },
+      { src: "/apks/app4/bookmarks.jpg", caption: "Bookmark your favorite articles." },
+      { src: "/apks/app4/profile.jpg", caption: "Manage your profile and preferences." },
+      { src: "/apks/app4/appearence.jpg", caption: "Switch between light and dark mode." },
+      { src: "/apks/app4/help and support.jpg", caption: "Get help and support easily." },
+      { src: "/apks/app4/About.jpg", caption: "Learn more about NewsApp." }
+    ],
+    changelog: [
+      "v1.0.0 - Initial release with personalized categories, bookmarks, real-time updates, and dark mode."
+    ],
+    apkFile: "/apks/app4/app-release.apk",
+  }
 ];
 
 export default apks;
