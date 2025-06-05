@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^5.11.2",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
     "js-cookie": "^3.0.5",
