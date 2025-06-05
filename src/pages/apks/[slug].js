@@ -2,6 +2,7 @@
 import Layout from "@/components/Layout";
 import { useRouter } from "next/router";
 import apks from "@/data/apksData";
+import Image from "next/image";
 
 export default function ApkDetails() {
   const router = useRouter();
@@ -55,7 +56,13 @@ export default function ApkDetails() {
           <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6">
             {apk.screenshots.map((s, i) => (
               <div key={i} className="flex flex-col items-center">
-                <img src={s.src} alt={s.caption || s.alt || apk.name} className="rounded shadow border mb-2 w-full max-w-[220px] sm:max-w-xs object-cover" />
+                <Image
+                  src={s.src}
+                  alt={s.caption || s.alt || apk.name}
+                  width={220}
+                  height={124}
+                  className="rounded shadow border mb-2 w-full max-w-[220px] sm:max-w-xs object-cover"
+                />
                 <span className="text-xs text-gray-500 text-center">{s.caption || s.alt}</span>
               </div>
             ))}

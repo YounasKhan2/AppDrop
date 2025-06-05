@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import Link from "next/link";
 import apks from "@/data/apksData";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -64,9 +65,11 @@ export default function Home() {
                 className="group relative bg-white dark:bg-[#232323] rounded-2xl shadow-xl border border-gray-100 dark:border-[#232323] p-0 flex flex-col items-stretch overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-2xl min-w-0"
               >
                 <div className="relative w-full h-32 sm:h-40 bg-gradient-to-tr from-blue-100 to-blue-200 dark:from-[#232323] dark:to-[#181818] flex items-center justify-center">
-                  <img
+                  <Image
                     src={apk.screenshots[0]?.src}
                     alt={apk.name}
+                    width={96}
+                    height={96}
                     className="w-16 h-16 sm:w-24 sm:h-24 object-cover rounded-xl shadow-lg border-4 border-white dark:border-[#232323] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:scale-105 transition-transform"
                   />
                 </div>
