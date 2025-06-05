@@ -2,7 +2,7 @@
 import Layout from "@/components/Layout";
 import Link from "next/link";
 
-// Example blog post data (replace with CMS or markdown loader if needed)
+
 const blogPosts = [
   {
     slug: "android-apk-safety-guide",

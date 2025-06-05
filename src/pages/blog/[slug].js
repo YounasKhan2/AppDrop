@@ -1,6 +1,7 @@
 // Blog Post Template Page
 import Layout from "@/components/Layout";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 // Example blog post content (replace with CMS or markdown loader if needed)
 const blogPosts = {
@@ -350,8 +351,8 @@ export default function BlogPost() {
       <article className="max-w-2xl mx-auto py-8">
         <h1 className="text-3xl font-bold mb-2">{post.title}</h1>
         <div className="text-xs text-gray-500 mb-6">{post.date}</div>
-        <div className="prose dark:prose-invert text-base mb-8 whitespace-pre-line">{post.content}</div>
-        <a href="/blog" className="text-blue-600 hover:underline text-sm">← Back to Blog</a>
+        <div className="prose dark:prose-invert text-base mb-8 whitespace-pre-line">{post.content.replace(/'/g, "&apos;")}</div>
+        <Link href="/blog" className="text-blue-600 hover:underline text-sm">&larr; Back to Blog</Link>
       </article>
     </Layout>
   );
