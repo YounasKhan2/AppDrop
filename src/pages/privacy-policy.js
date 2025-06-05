@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       </ul>
       <h2 className="text-xl font-semibold mb-2">Third-Party Services</h2>
       <ul className="list-disc pl-6 mb-4">
-        <li>We use Google AdSense to display ads. Google’s use of advertising cookies enables it to serve ads based on your visits to our site and other sites on the Internet.</li>
+        <li>We use Google AdSense to display ads. Google&apos;s use of advertising cookies enables it to serve ads based on your visits to our site and other sites on the Internet.</li>
         <li>We may use Google Analytics and other ad networks for analytics and advertising purposes.</li>
       </ul>
       <h2 className="text-xl font-semibold mb-2">User Rights & Opt-Out Options</h2>
