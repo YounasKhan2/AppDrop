@@ -2,11 +2,16 @@
 import Layout from "@/components/Layout";
 import { useRouter } from "next/router";
 import apks from "@/data/apksData";
+import { useState } from "react";
 
 export default function ApkDetails() {
   const router = useRouter();
   const { slug } = router.query;
   const apk = apks.find(a => a.slug === slug);
+  const [reviews, setReviews] = useState(apk?.reviews || []);
+  const [form, setForm] = useState({ user: "", text: "" });
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   if (!apk) {
     return (
@@ -15,6 +20,30 @@ export default function ApkDetails() {
       </Layout>
     );
   }
+
+  const handleChange = e => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    setError("");
+    setSuccess("");
+    if (!form.user.trim() || !form.text.trim()) {
+      setError("Please enter your name and feedback.");
+      return;
+    }
+    // Google AdSense policy: no hate, violence, illegal, or inappropriate content
+    const forbidden = ["hate", "violence", "illegal", "sex", "porn", "drugs", "gambling", "casino", "terror", "kill", "murder", "racist", "nazi", "suicide", "self-harm"];
+    const lower = form.text.toLowerCase();
+    if (forbidden.some(word => lower.includes(word))) {
+      setError("Your feedback contains inappropriate content and cannot be posted.");
+      return;
+    }
+    setReviews([{ user: form.user, text: form.text }, ...reviews]);
+    setForm({ user: "", text: "" });
+    setSuccess("Thank you for your feedback!");
+  };
 
   return (
     <Layout title={apk.name}>
@@ -75,12 +104,24 @@ export default function ApkDetails() {
         ))}
       </ul>
       <h2 className="text-xl sm:text-2xl font-semibold mb-2">User Reviews</h2>
+      <form onSubmit={handleSubmit} className="mb-6 max-w-lg mx-auto bg-gray-50 dark:bg-[#232323] rounded p-4 flex flex-col gap-3 border border-gray-200">
+        <label className="font-medium">Your Name
+          <input name="user" value={form.user} onChange={handleChange} className="w-full mt-1 px-3 py-2 border rounded" maxLength={32} required />
+        </label>
+        <label className="font-medium">Your Feedback
+          <textarea name="text" value={form.text} onChange={handleChange} className="w-full mt-1 px-3 py-2 border rounded" maxLength={300} required></textarea>
+        </label>
+        {error && <div className="text-red-600 text-sm">{error}</div>}
+        {success && <div className="text-green-600 text-sm">{success}</div>}
+        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 transition w-full sm:w-auto">Submit Feedback</button>
+        <div className="text-xs text-gray-500 mt-1">Feedback must comply with Google AdSense content policies.</div>
+      </form>
       <div className="mb-8">
-        {apk.reviews && apk.reviews.length > 0 ? (
-          apk.reviews.map((r, i) => (
+        {reviews.length > 0 ? (
+          reviews.map((r, i) => (
             <div key={i} className="mb-4 p-4 bg-gray-50 dark:bg-[#232323] rounded shadow text-xs sm:text-base">
               <div className="font-semibold text-blue-700 dark:text-blue-400 mb-1">{r.user}</div>
-              <div className="text-gray-700 dark:text-gray-300">{r.text}</div>
+              <div className="text-gray-700 dark:text-gray-300 break-words">{r.text}</div>
             </div>
           ))
         ) : (
