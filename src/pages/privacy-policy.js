@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       <h2 className="text-xl font-semibold mb-2">Information We Collect</h2>
       <ul className="list-disc pl-6 mb-4">
         <li>We use cookies and similar technologies to personalize ads, analyze traffic, and improve user experience. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this and other websites.</li>
-        <li>Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Google Ad Settings</a>.</li>
+        <li>Google&apos;s use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Google Ad Settings</a>.</li>
         <li>We may collect your IP address, device information, browser type, and usage data for analytics and security.</li>
         <li>If you submit feedback or download APKs, we may collect your name, email (if provided), and feedback content. Download logs may include IP address and timestamp for security and abuse prevention.</li>
       </ul>
