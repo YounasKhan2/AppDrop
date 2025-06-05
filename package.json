@@ -12,6 +12,7 @@
     "@netlify/plugin-nextjs": "^5.11.2",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
+    "firebase": "^11.9.0",
     "js-cookie": "^3.0.5",
     "next": "15.3.3",
     "nodemailer": "^7.0.3",
