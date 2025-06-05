@@ -154,7 +154,7 @@ The app was created to bring the cinema to your pocket, with a focus on fast str
     changelog: [
       "v1.0.0 - Initial release with personalized categories, bookmarks, real-time updates, and dark mode."
     ],
-    apkFile: "/apks/app4/app-release.apk",
+    apkFile: "/apks/app4/PulseNews_v1.0.apk",
   }
 ];
 
