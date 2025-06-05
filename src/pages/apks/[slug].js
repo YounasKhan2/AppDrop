@@ -50,14 +50,23 @@ export default function ApkDetails() {
         <div className="w-full max-w-xs sm:max-w-lg md:max-w-lg h-16 sm:h-24 bg-gray-200 text-gray-500 rounded flex items-center justify-center mb-2 text-xs sm:text-base">AdSense Large Rectangle (336x280)</div>
       </div>
       <div className="flex flex-col items-center mb-8 px-2">
-        <a
-          href={apk.apkFile}
-          download
-          className="bg-blue-600 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-lg font-bold text-base sm:text-lg shadow hover:bg-blue-700 transition mb-2 w-full max-w-xs sm:max-w-md text-center"
-        >
-          Download APK
-        </a>
-        <span className="text-xs text-gray-500">Latest version. Safe & direct download.</span>
+        {apk.apkFile ? (
+          <a
+            href={apk.apkFile}
+            download
+            className="bg-blue-600 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-lg font-bold text-base sm:text-lg shadow hover:bg-blue-700 transition mb-2 w-full max-w-xs sm:max-w-md text-center"
+          >
+            Download APK
+          </a>
+        ) : (
+          <button
+            disabled
+            className="bg-gray-400 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-lg font-bold text-base sm:text-lg shadow mb-2 w-full max-w-xs sm:max-w-md text-center cursor-not-allowed opacity-80"
+          >
+            Coming Soon!
+          </button>
+        )}
+        <span className="text-xs text-gray-500">{apk.apkFile ? 'Latest version. Safe & direct download.' : 'Download will be available soon.'}</span>
       </div>
       <h2 className="text-xl sm:text-2xl font-semibold mb-2">Changelog</h2>
       <ul className="list-disc pl-4 sm:pl-6 mb-6 text-xs sm:text-base">

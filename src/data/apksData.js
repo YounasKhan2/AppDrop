@@ -76,7 +76,43 @@ const apks = [
       "v1.0.0 - Initial release with real-time chat, group messaging, media sharing, and secure login."
     ],
     apkFile: "/apks/app2/ChatApp_v1.0.apk",
-  }
+  },
+  {
+  slug: "app3",
+  name: "CineMovies",
+  description: `CineMovies is a sleek and user-friendly movie streaming app that lets you watch the latest movies and timeless classics anytime, anywhere. Enjoy a vast library of films across genres, high-quality streaming, and personalized recommendations. CineMovies is designed for movie lovers who want a seamless and enjoyable viewing experience on their mobile devices.
+
+The app was created to bring the cinema to your pocket, with a focus on fast streaming, intuitive navigation, and a beautiful interface. No subscription required to browse and discover movies!`,
+  features: [
+    {
+      title: "Vast Movie Library",
+      explanation: "Browse and stream thousands of movies from all genres and eras."
+    },
+    {
+      title: "High-Quality Streaming",
+      explanation: "Enjoy movies in HD with minimal buffering and adaptive quality."
+    },
+    {
+      title: "Personalized Recommendations",
+      explanation: "Get movie suggestions based on your watch history and preferences."
+    },
+    {
+      title: "Watchlist & Favorites",
+      explanation: "Save movies to your watchlist and mark your favorites for easy access."
+    }
+  ],
+  screenshots: [
+    { src: "/apks/app3/login.jpg", caption: "Login to access CineMovies." },
+    { src: "/apks/app3/signup.jpg", caption: "Sign up and start streaming instantly." },
+    { src: "/apks/app3/homepage.jpg", caption: "Discover trending and recommended movies." },
+    { src: "/apks/app3/detail screen.jpg", caption: "View detailed info and trailers for each movie." },
+    { src: "/apks/app3/profile.jpg", caption: "Manage your profile and watchlist." }
+  ],
+  changelog: [
+    "v1.0.0 - Initial release with movie streaming, recommendations, and watchlist features."
+  ],
+  apkFile: null // Download not enabled yet
+}
 ];
 
 export default apks;
