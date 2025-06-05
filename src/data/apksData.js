@@ -37,6 +37,45 @@ const apks = [
       "v1.0.0 - Initial release with core features: transaction tracking, reports, budgets, and multi-account support."
     ],
     apkFile: "/apks/app1/ExpenseTracker_v1.0.apk",
+  },
+  {
+    slug: "app2",
+    name: "Chat App Messenger",
+    description: `Chat App Messenger is a modern, secure, and fast messaging app built with Flutter. Stay connected with friends and family through real-time chat, group conversations, and media sharing. The app is designed for seamless communication with a clean interface and robust privacy features. Whether for personal or professional use, Chat App Messenger makes staying in touch easy and enjoyable.\n\nThe app was created to provide a reliable and user-friendly messaging experience. It focuses on speed, security, and simplicity, ensuring your conversations are always private and accessible.`,
+    features: [
+      {
+        title: "Real-Time Messaging",
+        explanation: "Send and receive messages instantly with push notifications."
+      },
+      {
+        title: "Group Chats",
+        explanation: "Create and join group conversations for easy collaboration."
+      },
+      {
+        title: "Media Sharing",
+        explanation: "Share photos, videos, and files securely with your contacts."
+      },
+      {
+        title: "User Profiles",
+        explanation: "Personalize your profile with avatars and status updates."
+      },
+      {
+        title: "Secure & Private",
+        explanation: "All messages are encrypted for your privacy and security."
+      }
+    ],
+    screenshots: [
+      { src: "/apks/app2/login.jpg", caption: "Login securely to your account." },
+      { src: "/apks/app2/signup.jpg", caption: "Quick sign-up for new users." },
+      { src: "/apks/app2/homepage.jpg", caption: "Main chat dashboard." },
+      { src: "/apks/app2/chatscreen.jpg", caption: "Chat with friends in real time." },
+      { src: "/apks/app2/profile.jpg", caption: "Customize your user profile." },
+      { src: "/apks/app2/functionalities.jpg", caption: "Explore app functionalities." }
+    ],
+    changelog: [
+      "v1.0.0 - Initial release with real-time chat, group messaging, media sharing, and secure login."
+    ],
+    apkFile: "/apks/app2/ChatApp_v1.0.apk",
   }
 ];
 
