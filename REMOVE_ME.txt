@@ -1,0 +1,6 @@
+Remove the following unused/demo files:
+- public/next.svg
+- public/vercel.svg
+- src/pages/api/hello.js
+
+These are not needed for your custom APKDrop site.

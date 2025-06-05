@@ -1,0 +1,4 @@
+- Remove demo SVGs: public/next.svg, public/vercel.svg
+- Remove API demo: src/pages/api/hello.js
+- Confirm all demo code is removed from pages/index.js
+- Confirm all custom pages (about, disclaimer, privacy-policy, apks) are present and correct
