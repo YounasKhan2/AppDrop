@@ -156,6 +156,59 @@ The app was created to bring the cinema to your pocket, with a focus on fast str
       "v1.0.0 - Initial release with personalized categories, bookmarks, real-time updates, and dark mode."
     ],
     apkFile: "/apks/app4/PulseNews_v1.0.apk",
+  },
+  {
+    slug: "app5",
+    name: "Photo Editor Pro",
+    description: `Photo Editor Pro is a powerful and easy-to-use photo editing app for Android. Enhance your images with advanced filters, effects, cropping, and retouching tools. Whether you're a professional photographer or just want to improve your selfies, Photo Editor Pro offers everything you need in a clean, ad-supported interface. The app is designed for fast, offline editing and privacy—your photos never leave your device.\n\nPhoto Editor Pro was created to make high-quality photo editing accessible to everyone. Our team focused on intuitive design, lightning-fast performance, and a wide range of creative features. Monetization is handled through non-intrusive AdSense ads, ensuring a free experience for all users while supporting ongoing development.`,
+    developmentStory: `The idea for Photo Editor Pro came from our frustration with bloated, expensive photo editing apps. We wanted to build a tool that was both powerful and lightweight, with a focus on privacy and user experience. After months of prototyping and user testing, we launched Photo Editor Pro with AdSense integration to keep the app free and sustainable.`,
+    features: [
+      {
+        title: "Advanced Filters & Effects",
+        explanation: "Apply dozens of professional filters and effects to your photos instantly."
+      },
+      {
+        title: "Crop & Rotate",
+        explanation: "Easily crop, rotate, and straighten your images."
+      },
+      {
+        title: "Retouch Tools",
+        explanation: "Remove blemishes, whiten teeth, and smooth skin with a tap."
+      },
+      {
+        title: "Stickers & Text",
+        explanation: "Add fun stickers, frames, and custom text to your photos."
+      },
+      {
+        title: "Offline Editing",
+        explanation: "Edit photos without an internet connection—your data stays private."
+      },
+      {
+        title: "AdSense Supported",
+        explanation: "Enjoy all features for free, supported by non-intrusive AdSense ads."
+      }
+    ],
+    installation: `1. Download the APK file using the button below.\n2. Open your device's file manager and locate the downloaded APK.\n3. Tap the APK file to begin installation.\n4. If prompted, allow installation from unknown sources in your device settings.\n5. Once installed, open Photo Editor Pro and start editing your photos!`,
+    screenshots: [
+      { src: "/apks/app5/homepage.jpg", caption: "Photo Editor Pro - Homepage" },
+      { src: "/apks/app5/login.jpg", caption: "Login Screen" },
+      { src: "/apks/app5/signup.jpg", caption: "Signup Screen" },
+      { src: "/apks/app5/setttings.jpg", caption: "Settings Screen" },
+      { src: "/apks/app5/splash.jpg", caption: "App Splash Screen" }
+    ],
+    versionHistory: [
+      {
+        version: "1.0.0",
+        date: "2025-06-01",
+        changes: [
+          "Initial release with advanced filters, cropping, retouch tools, and AdSense integration.",
+          "Offline editing and privacy-first design.",
+          "Added stickers, text, and frames."
+        ],
+        apkUrl: "/apks/app5/app-release.apk"
+      }
+    ],
+    apkFile: "/apks/app5/To-do List_v1.0.apk"
   }
 ];
 
