@@ -159,38 +159,38 @@ The app was created to bring the cinema to your pocket, with a focus on fast str
   },
   {
     slug: "app5",
-    name: "Photo Editor Pro",
-    description: `Photo Editor Pro is a powerful and easy-to-use photo editing app for Android. Enhance your images with advanced filters, effects, cropping, and retouching tools. Whether you're a professional photographer or just want to improve your selfies, Photo Editor Pro offers everything you need in a clean, ad-supported interface. The app is designed for fast, offline editing and privacy—your photos never leave your device.\n\nPhoto Editor Pro was created to make high-quality photo editing accessible to everyone. Our team focused on intuitive design, lightning-fast performance, and a wide range of creative features. Monetization is handled through non-intrusive AdSense ads, ensuring a free experience for all users while supporting ongoing development.`,
-    developmentStory: `The idea for Photo Editor Pro came from our frustration with bloated, expensive photo editing apps. We wanted to build a tool that was both powerful and lightweight, with a focus on privacy and user experience. After months of prototyping and user testing, we launched Photo Editor Pro with AdSense integration to keep the app free and sustainable.`,
+    name: "To-Do List",
+    description: `To-Do List is a simple, fast, and ad-supported productivity app for Android. Organize your daily tasks, set reminders, and track your progress with an intuitive interface. Designed for busy people, To-Do List helps you stay focused and get things done efficiently. All your tasks are stored locally for privacy, and the app works offline. Monetization is handled through non-intrusive AdSense ads, ensuring a free experience for all users while supporting ongoing development.\n\nTo-Do List was created to help users manage their time and tasks without distractions. Our team focused on a clean design, fast performance, and essential features for everyday productivity.`,
+    developmentStory: `The idea for To-Do List came from our own need for a lightweight, no-nonsense task manager. We wanted to build an app that was easy to use, quick to launch, and didn't require an account or cloud sync. After testing with real users, we added features like reminders, recurring tasks, and dark mode. AdSense integration keeps the app free for everyone.`,
     features: [
       {
-        title: "Advanced Filters & Effects",
-        explanation: "Apply dozens of professional filters and effects to your photos instantly."
+        title: "Quick Task Entry",
+        explanation: "Add, edit, and delete tasks with just a few taps."
       },
       {
-        title: "Crop & Rotate",
-        explanation: "Easily crop, rotate, and straighten your images."
+        title: "Reminders & Notifications",
+        explanation: "Set one-time or recurring reminders so you never miss a task."
       },
       {
-        title: "Retouch Tools",
-        explanation: "Remove blemishes, whiten teeth, and smooth skin with a tap."
+        title: "Task Organization",
+        explanation: "Group tasks by category, priority, or due date."
       },
       {
-        title: "Stickers & Text",
-        explanation: "Add fun stickers, frames, and custom text to your photos."
+        title: "Progress Tracking",
+        explanation: "Mark tasks as complete and view your productivity stats."
       },
       {
-        title: "Offline Editing",
-        explanation: "Edit photos without an internet connection—your data stays private."
+        title: "Offline & Private",
+        explanation: "All data is stored locally—no account or cloud required."
       },
       {
         title: "AdSense Supported",
         explanation: "Enjoy all features for free, supported by non-intrusive AdSense ads."
       }
     ],
-    installation: `1. Download the APK file using the button below.\n2. Open your device's file manager and locate the downloaded APK.\n3. Tap the APK file to begin installation.\n4. If prompted, allow installation from unknown sources in your device settings.\n5. Once installed, open Photo Editor Pro and start editing your photos!`,
+    installation: `1. Download the APK file using the button below.\n2. Open your device's file manager and locate the downloaded APK.\n3. Tap the APK file to begin installation.\n4. If prompted, allow installation from unknown sources in your device settings.\n5. Once installed, open To-Do List and start organizing your tasks!`,
     screenshots: [
-      { src: "/apks/app5/homepage.jpg", caption: "Photo Editor Pro - Homepage" },
+      { src: "/apks/app5/homepage.jpg", caption: "To-Do List - Homepage" },
       { src: "/apks/app5/login.jpg", caption: "Login Screen" },
       { src: "/apks/app5/signup.jpg", caption: "Signup Screen" },
       { src: "/apks/app5/setttings.jpg", caption: "Settings Screen" },
@@ -201,11 +201,11 @@ The app was created to bring the cinema to your pocket, with a focus on fast str
         version: "1.0.0",
         date: "2025-06-01",
         changes: [
-          "Initial release with advanced filters, cropping, retouch tools, and AdSense integration.",
-          "Offline editing and privacy-first design.",
-          "Added stickers, text, and frames."
+          "Initial release with quick task entry, reminders, progress tracking, and AdSense integration.",
+          "Offline mode and privacy-first design.",
+          "Added recurring tasks and dark mode."
         ],
-        apkUrl: "/apks/app5/app-release.apk"
+        apkUrl: "/apks/app5/To-do List_v1.0.apk"
       }
     ],
     apkFile: "/apks/app5/To-do List_v1.0.apk"
