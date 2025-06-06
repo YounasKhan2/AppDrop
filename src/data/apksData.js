@@ -36,7 +36,8 @@ const apks = [
         ],
         apkUrl: "/apks/app1/ExpenseTracker_v1.0.apk"
       }
-    ]
+    ],
+    apkFile: "/apks/app1/ExpenseTracker_v1.0.apk",
   },
   {
     slug: "app2",
