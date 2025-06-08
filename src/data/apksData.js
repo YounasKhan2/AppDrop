@@ -208,7 +208,7 @@ The app was created to bring the cinema to your pocket, with a focus on fast str
         apkUrl: "/apks/app5/To-do List_v1.0.apk"
       }
     ],
-    apkFile: "/apks/app5/To-do List_v1.0.apk"
+    apkFile: "/apks/app5/To-Do List_v1.0.apk.sha1"
   }
 ];
 
