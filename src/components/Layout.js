@@ -1,7 +1,50 @@
 // Layout component with navigation and AdSense placeholder
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+import { AdSenseAd } from "@/components/AdSenseAd";
+import SideRailAd from "@/components/SideRailAd";
 
 export default function Layout({ title, children }) {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const script = document.createElement("script");
+      script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+      script.async = true;
+      script.setAttribute("data-ad-client", "ca-pub-9113733158673282");
+      document.body.appendChild(script);
+      // (Re)initialize ads after script loads
+      const tryPushAds = () => {
+        if (window.adsbygoogle && document.querySelectorAll('.adsbygoogle').length) {
+          document.querySelectorAll('.adsbygoogle').forEach(ad => {
+            try { window.adsbygoogle.push({}); } catch (e) {}
+          });
+        }
+      };
+      script.onload = tryPushAds;
+      setTimeout(tryPushAds, 1000);
+    }
+  }, []);
+
+  // AdSense Side Rail (Desktop Only)
+  const adRef = useRef(null);
+  useEffect(() => {
+    if (typeof window !== "undefined" && adRef.current) {
+      if (!window.adsbygoogle) {
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+        script.setAttribute("data-ad-client", "ca-pub-9113733158637632");
+        document.body.appendChild(script);
+        script.onload = () => {
+          window.adsbygoogle = window.adsbygoogle || [];
+          window.adsbygoogle.push({});
+        };
+      } else {
+        window.adsbygoogle.push({});
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 via-white to-blue-100 dark:from-[#181818] dark:via-[#232323] dark:to-[#181818] text-foreground">
       <header className="py-4 px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between shadow-lg bg-white/80 dark:bg-[#181818]/90 backdrop-blur-md sticky top-0 z-30 border-b border-gray-200 dark:border-[#232323] gap-2 sm:gap-0">
@@ -28,12 +71,23 @@ export default function Layout({ title, children }) {
       <main className="flex-1 w-full max-w-full sm:max-w-5xl mx-auto px-2 sm:px-4 py-6 sm:py-10 md:py-14">
         {children}
       </main>
+      {/* AdSense Display Ad (Client Only) */}
+      <div className="flex justify-center py-2 px-2">
+        <AdSenseAd
+          adClient="ca-pub-9113733158673282"
+          adSlot="4111391939"
+          format="auto"
+          fullWidthResponsive={true}
+        />
+      </div>
       {/* AdSense placeholder (bottom) */}
       <div className="flex justify-center py-2 px-2">
         <div className="bg-gradient-to-r from-blue-100 to-blue-200 dark:from-[#232323] dark:to-[#181818] text-gray-500 rounded-xl w-full max-w-xs sm:max-w-lg md:max-w-2xl h-12 flex items-center justify-center shadow-inner border border-blue-100 dark:border-[#232323] text-xs sm:text-base">
           AdSense Banner Placeholder
         </div>
       </div>
+      {/* AdSense Side Rail (Desktop Only) */}
+      <SideRailAd />
       <footer className="py-6 px-4 sm:px-6 text-center text-xs sm:text-sm text-gray-500 border-t border-gray-200 dark:border-[#232323] mt-8 bg-white/70 dark:bg-[#181818]/80 backdrop-blur-md">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
           <span>&copy; {new Date().getFullYear()} <span className="font-semibold text-blue-700 dark:text-blue-400">APKDrop</span>. All rights reserved.</span>
